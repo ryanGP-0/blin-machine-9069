@@ -22,7 +22,12 @@ async def howtransami(ctx):
 @bot.command()
 async def howgaeami(ctx):
   gaeperc = random.randint(1,100)
-  await ctx.send("You are " + str(gaeperc) + '% gae :rainbow_flag:')  
+  await ctx.send("You are " + str(gaeperc) + '% gae :rainbow_flag:') 
+
+@bot.command()
+async def howthotami(ctx):
+  thotperc = random.randint(1,100)
+  await ctx.send("You are " + str(thotperc) + '% thot :peach:') 
 
 @bot.command()
 async def jtquotes(ctx):
