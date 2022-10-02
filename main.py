@@ -44,8 +44,5 @@ async def on_message(message):
         if random.random() > 0.7:
             await message.channel.send("JT")
             return 
-    await bot.process_commands(message)
-
-
 
 bot.run(token)
