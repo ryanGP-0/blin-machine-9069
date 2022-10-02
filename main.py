@@ -3,7 +3,7 @@ from nextcord.ext import commands
 
 intents = nextcord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix="blin ", description="Blin ass machine", intents=intents)
+bot = commands.Bot(command_prefix="b.", description="Blin ass machine", intents=intents)
 
 print("Loading Variables.")
 try:
@@ -13,10 +13,6 @@ try:
 except Exception as e:
     print("An error Occured:",e)
     exit
-    
-@bot.command()
-async def test(ctx):
-    await ctx.send("test")
 
 @bot.command()
 async def howtransami(ctx):
@@ -24,9 +20,9 @@ async def howtransami(ctx):
   await ctx.send("You are " + str(transperc) + '% trans :transgender_flag: ')  
 
 @bot.command()
-async def JTquotes(ctx):
+async def jtquotes(ctx):
     quote = random.choice(jt_quotes)
-    await ctx.send("\'"+quote+"\"\n\n -JT")
+    await ctx.send("\""+quote+"\"\n\n -JT")
 
 @bot.event
 async def on_ready():
@@ -51,5 +47,14 @@ async def on_message(message):
 @bot.command()
 async def nudes(ctx):
     await ctx.send(file=nextcord.File("resources/nudes.mp4"))
+
+@bot.command()
+async def toss(ctx):
+    await ctx.send('flipping a coin :coin:')
+    coin = random.randint(0,1)
+    if coin == 0:
+        await ctx.send("It landed on `heads`")
+    if coin == 1:
+        await ctx.send('It landed on `tails`')
 
 bot.run(token)
