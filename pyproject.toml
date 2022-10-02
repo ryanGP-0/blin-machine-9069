@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "blin machine"
+version = "0.1.0"
+description = "it can blin"
+authors = ["Your Name <you@example.com>"]
+license = "balls"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nextcord = "^2.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
