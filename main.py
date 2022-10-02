@@ -36,13 +36,19 @@ async def on_ready():
 async def on_message(message):
     if message.author == bot.user:
         return
-    if "macky" in message.content or "ryan" in message.content:
+    if "macky" == message.content or "ryan" in message.content:
         if random.random() > 0.7:
             await message.channel.send("is chad") 
             return
-    if "keshav" in message.content:
+    if "keshav" == message.content:
         if random.random() > 0.7:
             await message.channel.send("JT")
-            return 
+            return
+    if "nice joke" in message.content:
+            await message.channel.send("https://media.discordapp.net/attachments/825055109502730332/1026062254908637245/nicejoke.png")
+            return
+
+
+
 
 bot.run(token)
