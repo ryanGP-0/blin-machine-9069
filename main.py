@@ -7,8 +7,8 @@ bot = commands.Bot(command_prefix="blin ", description="Blin ass machine", inten
 
 print("Loading Variables.")
 try:
-    jt_quotes = open("Jt quotes").read().split("\n")
-    token = open("token").read()
+    jt_quotes = open("resources/Jt quotes").read().split("\n")
+    token = open("resources/token").read()
     print("Loaded Successfully.")
 except Exception as e:
     print("An error Occured:",e)
@@ -26,7 +26,7 @@ async def howtransami(ctx):
 @bot.command()
 async def JTquotes(ctx):
     quote = random.choice(jt_quotes)
-    await ctx.send(quote+"\n       -JT")
+    await ctx.send("\'"+quote+"\"\n\n -JT")
 
 @bot.event
 async def on_ready():
