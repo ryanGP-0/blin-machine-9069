@@ -18,6 +18,11 @@ async def on_message(message):
         if random.random() > 0.7:
             await message.channel.send("JT")
             return 
-           
+
+@bot.command()
+async def howtransami(ctx):
+  transperc = random.randint(1,100)
+  await ctx.send("You are " + str(transperc) + '% trans :transgender_flag: ')  
+
 token = open("token").read()
 bot.run(token)
