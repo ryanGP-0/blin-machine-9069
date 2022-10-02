@@ -30,6 +30,11 @@ async def howthotami(ctx):
   await ctx.send("You are " + str(thotperc) + '% thot :peach:') 
 
 @bot.command()
+async def howsmortami(ctx):
+  smort = random.randint(1,100)
+  await ctx.send("You are " + str(smort) + '% smort :brain:') 
+
+@bot.command()
 async def jtquotes(ctx):
     quote = random.choice(jt_quotes)
     await ctx.send("\""+quote+"\"\n\n -JT")
