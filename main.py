@@ -17,7 +17,12 @@ except Exception as e:
 @bot.command()
 async def howtransami(ctx):
   transperc = random.randint(1,100)
-  await ctx.send("You are " + str(transperc) + '% trans :transgender_flag: ')  
+  await ctx.send("You are " + str(transperc) + '% trans :transgender_flag:')  
+
+@bot.command()
+async def howgaeami(ctx):
+  gaeperc = random.randint(1,100)
+  await ctx.send("You are " + str(gaeperc) + '% gae :rainbow_flag:')  
 
 @bot.command()
 async def jtquotes(ctx):
