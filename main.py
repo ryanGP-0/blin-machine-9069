@@ -62,6 +62,9 @@ async def on_message(message):
     if "nice joke" in message.content:
             await message.channel.send("https://media.discordapp.net/attachments/825055109502730332/1026062254908637245/nicejoke.png")
             return
+     if "blin" in message.content:
+        await message.channel.send("yes, yes, the blin religion must grow, it must spread")
+        return
 
 @bot.command()
 async def nudes(ctx):
