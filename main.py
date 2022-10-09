@@ -33,6 +33,10 @@ async def howthotami(ctx):
 async def howsmortami(ctx):
   smort = random.randint(1,100)
   await ctx.send("You are " + str(smort) + '% smort :brain:') 
+    
+@bot.command()
+async def amiblin(ctx):
+    await ctx.send("you are already the biggest blin for using this bot :heart:")
 
 @bot.command()
 async def jtquotes(ctx):
