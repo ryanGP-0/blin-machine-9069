@@ -93,5 +93,14 @@ async def ppsize(ctx):
     elif rand2 > 5:
         comment = "beeg pp"
     await ctx.send('your pp size is ' + '`8'+ ppsize + 'D`' + f'\n{comment}')
+    
+@bot.command()
+async def rr(ctx):
+  await ctx.send('You have started Russian Roulette')
+  bullets = random.randint(1,6)
+  if bullets == 6 or bullets == 3:
+    await ctx.send("Bang! You died, Try again")
+  else:
+    await ctx.send('You survived smol pp boi')
 
 bot.run(token)
